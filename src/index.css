@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.align-content {
+  @apply max-w-[1280px] w-full mx-auto px-2;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/src/assets/fonts/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/src/assets/fonts/Outfit-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("/src/assets/fonts/Outfit-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/fonts/Inter_18pt-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("/src/assets/fonts/Inter_18pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.raspberryRed {
+  background-color: #ee2f5e;
+}
+.lavender {
+  background-color: #eaedf9;
+}
