@@ -4,7 +4,7 @@ function Button({ text, className }) {
   return (
     <>
       <button
-        className={`${className} btn font-[Inter] border-0  rounded-3xl font-semibold`}
+        className={`${className}   font-[Inter] rounded-3xl `}
       >
         {text}
       </button>

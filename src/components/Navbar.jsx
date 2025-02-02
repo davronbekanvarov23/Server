@@ -60,7 +60,7 @@ function Navbar() {
           <Button
             text={"Kirish "}
             className={
-              "raspberryRed text-white   text-[16px] h-[59px] max-w-[125px] w-full"
+              "raspberryRed text-white py-5 px-10 font-semibold   text-[16px] "
             }
           />
         </div>

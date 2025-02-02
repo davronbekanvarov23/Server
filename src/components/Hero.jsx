@@ -13,8 +13,11 @@ function Hero() {
           tanlang!
         </p>
         <span className=" flex gap-2.5 h-16 max-w-96 w-full">
-          <Button text={"Bog‘lanish"} className={"raspberryRed text-white text-[20px] h-full w-[40%]"} />
-          <button className="btn btn-outline rounded-3xl font-[Inter] font-semibold h-full text-20px w-[60%]">
+          <Button
+            text={"Bog‘lanish"}
+            className={"raspberryRed text-white text-[20px] py-5 px-[30px] font-semibold "}
+          />
+          <button className="btn btn-outline rounded-3xl font-[Inter] font-semibold h-full text-[20px] py-5 px-[30px] ">
             Ko'proq ma'lumot
           </button>
         </span>
