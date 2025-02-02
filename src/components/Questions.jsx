@@ -20,7 +20,7 @@ function Questions() {
           <FormInput placeholder={"Telefon raqam"} />
           <FormInput placeholder={"Savolingizni yozib qoldiring"} />
           <hr className="text-white" />
-          <button className="px-[30px] bg-black text-white rounded-3xl font-[Inter] font-semibold text-[20px] py-5 ml-auto">
+          <button className="px-[30px] bg-black text-white rounded-3xl font-[Inter] font-semibold text-[20px] py-5 ml-auto cursor-pointer">
             Jonatish
           </button>
         </form>
