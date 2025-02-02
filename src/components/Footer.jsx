@@ -67,7 +67,7 @@ function Footer() {
       <div className="align-content">
         <footer className="footer sm:footer-horizontal  text-base-100 t p-10">
           <nav className=" max-w-[490px]">
-            <img src="/logo-footer.svg" alt="" />
+            <img src="/logo-footer.svg" alt="footer logo" width={163} height={49} />
             <p className=" font-semibold text-3xl mt-12 mb-5">
               200K mijozlar bizga ishonishgan. Siz ham bizga qo‘shiling!
             </p>
