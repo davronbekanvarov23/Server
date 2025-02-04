@@ -37,25 +37,25 @@ const links = [
 const socials = [
   {
     id: 1,
-    img: "/telegram.svg",
+    img: "/images/telegram.svg",
     title: "telegram",
     link: "",
   },
   {
     id: 2,
-    img: "/instagramm.svg",
+    img: "/images/instagramm.svg",
     title: "instagramm",
     link: "",
   },
   {
     id: 3,
-    img: "/twitter.svg",
+    img: "/images/twitter.svg",
     title: "twitter",
     link: "",
   },
   {
     id: 4,
-    img: "/fecebook.svg",
+    img: "/images/fecebook.svg",
     title: "fecebook",
     link: "",
   },
@@ -67,7 +67,12 @@ function Footer() {
       <div className="align-content">
         <footer className="footer sm:footer-horizontal  text-base-100 t p-10">
           <nav className=" max-w-[490px]">
-            <img src="/logo-footer.svg" alt="footer logo" width={163} height={49} />
+            <img
+              src="/images/logo-footer.svg"
+              alt="footer logo"
+              width={163}
+              height={49}
+            />
             <p className=" font-semibold text-3xl mt-12 mb-5">
               200K mijozlar bizga ishonishgan. Siz ham bizga qo‘shiling!
             </p>

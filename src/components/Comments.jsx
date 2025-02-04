@@ -3,7 +3,7 @@ const comments = [
     id: 1,
     description:
       "Hosting xizmatlari juda tez va ishonchli! Domen va SSL o'rnatish jarayoni juda oson bo'ldi. Rahmat!",
-    img: "/Ellipse1.png",
+    img: "/homeImages/Ellipse1.png",
     fullName: "Bobur Oltiboyev",
     job: "CEO",
   },
@@ -11,7 +11,7 @@ const comments = [
     id: 2,
     description:
       "Bu sayt orqali domen va hosting xizmatini olish ajoyib tajriba bo'ldi. Narxlari hamyonbop, xizmat sifati yuqori darajada. SSL sertifikatni ham bir zumda o'rnatib olish mumkin ekan.",
-    img: "/Ellipse2.png",
+    img: "/homeImages/Ellipse2.png",
     fullName: "Jamshid Qodir",
     job: "CEO ",
   },
@@ -19,7 +19,7 @@ const comments = [
     id: 3,
     description:
       "Men uzoq vaqt davomida hosting va domen xizmatlari uchun ishonchli kompaniya qidirib yurdim. Bu sayt meni haqiqatan ham hayratda qoldirdi! Ularning platformasi oddiy va tushunarli qilib yaratilgan, yangi boshlovchilar uchun juda qulay. Domen ro'yxatdan o'tkazish jarayoni oson bo'ldi va SSL sertifikatini o'rnatish bir necha daqiqada amalga oshdi. Xizmat sifati juda yuqori — saytlarim tez va barqaror ishlayapti. Mijozlarga xizmat ko'rsatish guruhi doimo yordamga tayyor va ular har bir savolga tezda javob berishdi. Bu saytni barcha tanishlarimga tavsiya qilaman. Xizmatlari uchun katta rahmat!",
-    img: "/Ellipse3.png",
+    img: "/homeImages/Ellipse3.png",
     fullName: "Sayora Isayeva",
     job: "CEO",
   },
@@ -34,11 +34,11 @@ function Comments() {
           const { id, description, img, fullName, job } = item;
           return (
             <li
-              className=" py-[27px] pr-[38px]  pl-[30px] lavender max-w-[413px]"
+              className=" py-[27px] pr-[38px]  pl-[30px] lavender max-w-[413px] border-1 pastelBlue rounded-[40px]"
               key={id}
             >
               <img
-                src="/qoshtirnoq.png"
+                src="/homeImages/qoshtirnoq.png"
                 alt="qoshtirnoq"
                 width={56}
                 height={60}

@@ -1,28 +1,41 @@
 import React from "react";
 import Button from "./Button";
 
+// import {} from "../assets/images/tubes.mp4";
+
 function Hero() {
   return (
-    <div className=" bg-black text-white flex py-3 pl-[90px] gap-[108px] rounded-4xl mb-[34px] ">
+    <div className=" bg-black text-white flex pl-[90px] gap-[108px] rounded-4xl mb-[34px] h-[492px]   ">
       <div className=" mt-[60px] max-w-[545px] ">
-        <h2 className=" text-6xl  font-extrabold mb-2.5 ">
+        <h2 className=" text-6xl  font-extrabold mb-2.5 leading-[76px] ">
           Eng Ishonchli Hosting Xizmati!
         </h2>
-        <p className=" text-[18px] font-medium font-[Inter] mb-20">
+        <p className=" text-[18px]  font-[Inter] font-medium mb-20 leading-[22px]">
           Tezlik, xavfsizlik va uzluksiz ish faoliyati bilan mukammal xizmatni
           tanlang!
         </p>
-        <span className=" flex gap-2.5 h-16 max-w-96 w-full">
+        <span className="flex  gap-2.5 max-w-[403px]">
           <Button
             text={"Bog‘lanish"}
-            className={"raspberryRed text-white text-[20px] py-5 px-[30px] font-semibold "}
+            className={
+              "raspberryRed text-white text-[20px] py-5 px-[30px] font-semibold max-w-40"
+            }
           />
-          <button className="btn btn-outline rounded-3xl font-[Inter] font-semibold h-full text-[20px] py-5 px-[30px] ">
-            Ko'proq ma'lumot
-          </button>
+          <Button
+            text={" Ko'proq ma'lumot"}
+            className="font-semibold text-[20px] py-5 px-[30px] border-1 gray10"
+          />
         </span>
       </div>
-      <img src="/Hero-img.png" alt="" width={434} height={468} />
+      <video
+        autoPlay
+        loop
+        muted
+        className="object-cover"
+        width={434}
+        height={468}
+        src="/videos/tubes.mp4"
+      ></video>
     </div>
   );
 }

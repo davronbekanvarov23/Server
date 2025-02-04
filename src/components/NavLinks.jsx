@@ -13,7 +13,9 @@ function NavLinks() {
           <NavLink
             to={path}
             className={({ isActive }) =>
-              isActive ? "bg-blue-500 text-white   rounded-lg" : "text-gray-100"
+              isActive
+                ? "raspberryRed text-white rounded-lg px-[15px] py-[11px] font-[Inter] font-semibold text-[16px]"
+                : "text-gray-100 px-[15px] py-[11px] font-[Inter] font-semibold text-[16px]"
             }
           >
             {text}

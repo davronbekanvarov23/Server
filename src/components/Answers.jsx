@@ -41,7 +41,7 @@ function Answers() {
         Ko‘p so‘raladigan savollar
       </h3>
       <ul>
-        <hr />
+        <hr className="text-[#eaedf9] text-[3px]" />
         {questions.map((item) => (
           <li key={item.id} className="">
             <span
@@ -50,7 +50,7 @@ function Answers() {
               } pr-5 cursor-pointer`}
               onClick={() => toggleItem(item.id)}
             >
-              <p className="text-2xl">{item.question}</p>
+              <p className="text-[28px]">{item.question}</p>
               <IoIosArrowDown
                 size={34}
                 className={`transform transition-all ${
@@ -65,7 +65,7 @@ function Answers() {
               </p>
             )}
 
-            <hr />
+            <hr className="text-[#eaedf9] text-[3px]" />
           </li>
         ))}
       </ul>

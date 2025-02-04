@@ -8,7 +8,7 @@
 } */
 
 .align-content {
-  @apply max-w-[1280px] w-full mx-auto px-2;
+  @apply max-w-[1296px] w-full mx-auto px-2;
 }
 
 @font-face {
@@ -16,6 +16,7 @@
   src: url("/src/assets/fonts/Outfit-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  line-height: 25px;
 }
 
 @font-face {
@@ -29,6 +30,13 @@
   src: url("/src/assets/fonts/Outfit-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  line-height: 25px;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("/src/assets/fonts/Outfit-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 @font-face {
   font-family: "Inter";
@@ -37,10 +45,11 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Outfit";
+  font-family: "Inter";
   src: url("/src/assets/fonts/Inter_18pt-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  line-height: 48px;
 }
 
 body {
@@ -51,5 +60,11 @@ body {
   background-color: #ee2f5e;
 }
 .lavender {
-  background-color: #eaedf9;
+  background-color: #f5f6fa;
+}
+.gray10 {
+  color: #c7c6d2;
+}
+.pastelBlue {
+  border-color:  #eaedf9;
 }

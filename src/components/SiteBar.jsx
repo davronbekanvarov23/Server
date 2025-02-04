@@ -21,20 +21,21 @@ function SiteBar() {
   ];
 
   return (
-    <ul className=" max-w-[524px] mx-auto font-medium font-[Inter] mb-5 lavender flex gap-4 h-16 justify-center items-center rounded-4xl">
+    <ul className=" max-w-[524px] mx-auto font-medium font-[Inter] mb-5 lavender flex gap-2.5 rounded-[70px] p-1 border-1 border-[#C7C6D2] sticky z-50 top-0">
       {links.map((link) => {
         return (
-          <li key={link.id}>
-            <button className="btn font-medium border-0 lavender">
-              {link.text}
-            </button>
+          <li
+            key={link.id}
+            className=" py-[19px] px-[15px] lavender rounded-[50px]"
+          >
+            {link.text}
           </li>
         );
       })}
 
       <Button
         text={"Bog‘lanish"}
-        className={"raspberryRed text-white  text-[16px]  py-[19px] px-5"}
+        className={"raspberryRed text-white py-[19px] px-5"}
       />
     </ul>
   );

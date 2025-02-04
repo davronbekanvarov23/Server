@@ -35,9 +35,9 @@ function News() {
                 alt=""
                 width={305}
                 height={200}
-                className="lavender mb-5"
+                className=" mb-5 lavender rounded-[30px]"
               />
-              <h6 className="text-[18px] font-medium">{title}</h6>
+              <h6 className="text-[21px] font-medium leading-[23px]">{title}</h6>
             </li>
           );
         })}
