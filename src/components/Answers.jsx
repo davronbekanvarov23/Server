@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import Title from "./Title";
 
 const questions = [
   {
@@ -29,17 +30,14 @@ const questions = [
 ];
 
 function Answers() {
-  const [openId, setOpenId] = useState(null); // Faqat bitta ID ochiq bo‘ladi
-
+  const [openId, setOpenId] = useState(null); 
   const toggleItem = (id) => {
-    setOpenId(openId === id ? null : id); // Agar ochilgan bo‘lsa, yopish, aks holda ochish
+    setOpenId(openId === id ? null : id); 
   };
 
   return (
     <div>
-      <h3 className="font-semibold text-6xl mb-10">
-        Ko‘p so‘raladigan savollar
-      </h3>
+     <Title text={"Ko‘p so‘raladigan savollar"}/>
       <ul>
         <hr className="text-[#eaedf9] text-[3px]" />
         {questions.map((item) => (
@@ -60,7 +58,7 @@ function Answers() {
             </span>
 
             {openId === item.id && (
-              <p className="text-[#8B8B8D] text-[20px] mb-[28px] pr-[108px]">
+              <p className="text-[#8B8B8D] text-2xl mb-[28px] pr-[108px]">
                 {item.answer}
               </p>
             )}

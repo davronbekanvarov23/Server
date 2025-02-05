@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import { useRef } from "react";
 
 const links = [
   {
@@ -63,7 +64,7 @@ const socials = [
 
 function Footer() {
   return (
-    <div className=" mt-[120px] bg-black">
+    <div className=" mt-[120px] bg-black Footerref" >
       <div className="align-content">
         <footer className="footer sm:footer-horizontal  text-base-100 t p-10">
           <nav className=" max-w-[490px]">
@@ -79,7 +80,7 @@ function Footer() {
             <Button
               text={"Kirish"}
               className={
-                "font-semibold text-[16px] h-[59px] max-w-[125px] w-full bg-white text-black"
+                "font-semibold text-[16px] h-[59px] max-w-[125px] w-full bg-white mainBlack"
               }
             />
           </nav>

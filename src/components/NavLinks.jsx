@@ -14,7 +14,7 @@ function NavLinks() {
             to={path}
             className={({ isActive }) =>
               isActive
-                ? "raspberryRed text-white rounded-lg px-[15px] py-[11px] font-[Inter] font-semibold text-[16px]"
+                ? "raspberryRed text-white px-[15px] py-[11px] font-[Inter] font-semibold text-[16px] rounded-[40px]"
                 : "text-gray-100 px-[15px] py-[11px] font-[Inter] font-semibold text-[16px]"
             }
           >

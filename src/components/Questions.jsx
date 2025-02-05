@@ -4,10 +4,10 @@ function Questions() {
   return (
     <div className="flex justify-between">
       <div className=" max-w-[528px]">
-        <h3 className=" font-semibold text-[44px]">
+        <h3 className=" font-semibold text-[46px] mainBlack">
           Qo‘shimcha savollaringiz bormi?
         </h3>
-        <p className="text-[18px]">
+        <p className="text-[20px]">
           Savollaringizni qoldiring o‘zimiz aloqaga chiqamiz.
         </p>
       </div>

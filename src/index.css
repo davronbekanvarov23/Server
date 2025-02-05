@@ -11,49 +11,60 @@
   @apply max-w-[1296px] w-full mx-auto px-2;
 }
 
+/* inter-500 - latin */
 @font-face {
-  font-family: "Outfit";
-  src: url("/src/assets/fonts/Outfit-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-display: swap;
+  font-family: "Inter";
   font-style: normal;
-  line-height: 25px;
+  font-weight: 500;
+  src: url("../src/assets/fonts/inter-v18-latin-500.woff2") format("woff2");
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../src/assets/fonts/inter-v18-latin-600.woff2") format("woff2");
 }
 
+/* outfit-regular - latin */
 @font-face {
+  font-display: swap;
   font-family: "Outfit";
-  src: url("/src/assets/fonts/Outfit-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/assets/fonts/outfit-v11-latin-regular.woff2") format("woff2");
+}
+/* outfit-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../src/assets/fonts/outfit-v11-latin-500.woff2") format("woff2");
+}
+/* outfit-600 - latin  */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../src/assets/fonts/outfit-v11-latin-600.woff2") format("woff2");
+}
+/* outfit-800 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
   font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Outfit";
-  src: url("/src/assets/fonts/Outfit-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  line-height: 25px;
-}
-@font-face {
-  font-family: "Outfit";
-  src: url("/src/assets/fonts/Outfit-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("/src/assets/fonts/Inter_18pt-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("/src/assets/fonts/Inter_18pt-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  line-height: 48px;
+  src: url("../src/assets/fonts/outfit-v11-latin-800.woff2") format("woff2");
 }
 
 body {
   font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .raspberryRed {
@@ -66,5 +77,8 @@ body {
   color: #c7c6d2;
 }
 .pastelBlue {
-  border-color:  #eaedf9;
+  border-color: #eaedf9;
+}
+.mainBlack {
+  color: #020F15;
 }

@@ -12,19 +12,16 @@ import {
 
 function Home() {
   return (
-    <div>
+    <div className="flex gap-[120px] flex-col">
       <Hero />
       <SiteBar />
-      <div className="flex gap-[120px] flex-col">
-        {" "}
-        <Offer />
-        <Services />
-        <News />
-        <Comments />
-        <Partner />
-        <Answers />
-        <Questions />
-      </div>
+      <Offer />
+      <Services />
+      <News />
+      <Comments />
+      <Partner />
+      <Answers />
+      <Questions />
     </div>
   );
 }

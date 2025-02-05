@@ -4,6 +4,7 @@ export { default as Button } from "./Button";
 export { default as Hero } from "./Hero";
 export { default as SiteBar } from "./SiteBar";
 export { default as Offer } from "./Offer";
+export { default as Title } from "./Title";
 export { default as Services } from "./Services";
 export { default as News } from "./News";
 export { default as Comments } from "./Comments";

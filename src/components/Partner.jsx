@@ -2,31 +2,31 @@ import Marquee from "react-fast-marquee";
 const partners = [
   {
     id: 1,
-    img: "/click.png",
+    img: "/homeImages/click.png",
   },
   {
     id: 2,
-    img: "/Payme.png",
+    img: "/homeImages/Payme.png",
   },
   {
     id: 3,
-    img: "/Uzum.png",
+    img: "/homeImages/Uzum.png",
   },
   {
     id: 4,
-    img: "paynet.png",
+    img: "/homeImages/paynet.png",
   },
   {
     id: 5,
-    img: "upay.png",
+    img: "/homeImages/upay.png",
   },
   {
     id: 6,
-    img: "oson.png",
+    img: "/homeImages/oson.png",
   },
   {
     id: 7,
-    img: "Freemoney.png",
+    img: "/homeImages/Freemoney.png",
   },
 ];
 

@@ -14,7 +14,7 @@ function Hero() {
           Tezlik, xavfsizlik va uzluksiz ish faoliyati bilan mukammal xizmatni
           tanlang!
         </p>
-        <span className="flex  gap-2.5 max-w-[403px]">
+        <span className="flex  gap-2.5 max-w-[404px]">
           <Button
             text={"Bog‘lanish"}
             className={

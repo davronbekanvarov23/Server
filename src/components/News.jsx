@@ -1,3 +1,5 @@
+import Title from "./Title";
+
 const news = [
   {
     id: 1,
@@ -24,7 +26,7 @@ const news = [
 function News() {
   return (
     <div>
-      <h3 className="font-semibold text-[66px] mb-10">Yangiliklar</h3>
+      <Title text={"Yangiliklar"} />
       <ul className="flex gap-5">
         {news.map((item) => {
           const { id, img, title } = item;
@@ -37,7 +39,9 @@ function News() {
                 height={200}
                 className=" mb-5 lavender rounded-[30px]"
               />
-              <h6 className="text-[21px] font-medium leading-[23px]">{title}</h6>
+              <h6 className="text-[18px] font-medium leading-[23px]">
+                {title}
+              </h6>
             </li>
           );
         })}

@@ -1,9 +1,10 @@
 import { GoArrowUpRight } from "react-icons/go";
+import Title from "./Title";
 
 function Services() {
   return (
     <div>
-      <h3 className="font-semibold text-6xl mb-10">Bizning xizmatlarimiz</h3>
+      <Title text={"Bizning xizmatlarimiz"} />
 
       {/* Section top */}
 
@@ -14,8 +15,8 @@ function Services() {
           <button className="btn  p-[30px] font-[Inter] text-[20px] font-semibold rounded-4xl">
             Ko‘proq
           </button>
-          <h4 className=" font-semibold text-6xl mt-2.5 mb-2.5">SERVER</h4>
-          <p className=" text-[20px]">
+          <h4 className=" font-semibold text-[40px] mt-2.5 mb-2.5">SERVER</h4>
+          <p className="text-[20px]">
             Bizning serverlarimiz Germaniya, Rossiya va boshqa yirik
             davlatlarning ishonchli ma'lumot markazlarida joylashgan.{" "}
           </p>
@@ -47,7 +48,7 @@ function Services() {
               <span className=" w-[60px] h-[60px] bg-[#BCBCBC]/40 rounded-[50px] mb-12 flex justify-center items-center ml-auto ">
                 <GoArrowUpRight size={34} />
               </span>
-              <h4 className="font-semibold text-[40px]">Hosting</h4>
+              <h4 className="font-semibold text-[40px] mainBlack">Hosting</h4>
               <p className=" text-[20px] ">
                 Saytingiz uchun qulay va tezkor xosting xizmatlari.
               </p>
@@ -78,7 +79,7 @@ function Services() {
           <span className=" w-[60px] h-[60px] bg-[#BCBCBC]/40 rounded-[50px]  flex justify-center items-center ml-auto absolute right-[30px] top-[30px]">
             <GoArrowUpRight size={34} />
           </span>
-          <h4 className="font-semibold text-[40px] font-[Inter] max-w-44 ">
+          <h4 className="font-semibold text-[40px] font-[Inter] max-w-44 mainBlack">
             SSL sertifikati
           </h4>
           <p className=" text-[20px] mt-2.5 ">

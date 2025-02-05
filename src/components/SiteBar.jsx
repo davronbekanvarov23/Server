@@ -4,14 +4,17 @@ import { useEffect } from "react";
 
 function SiteBar() {
   const [isFixed, setIsFixed] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      }
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      setIsFixed(scrollY > 100);
+
+      setIsHidden(windowHeight + scrollY >= documentHeight);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -39,11 +42,11 @@ function SiteBar() {
 
   return (
     <ul
-      className={`max-w-[524px] mx-auto font-medium font-[Inter] mb-5 lavender flex gap-2.5 rounded-[70px] p-1 border-1 border-[#C7C6D2] z-50  ${
+      className={`max-w-[524px] mx-auto font-medium font-[Inter] lavender flex gap-2.5 rounded-[70px] p-1 border-1 border-[#C7C6D2] z-50  ${
         isFixed
-          ? "fixed bottom-0 left-1/2 transform -translate-x-1/2"
+          ? "fixed bottom-2 left-1/2 transform -translate-x-1/2"
           : "relative"
-      }`}
+      } ${isHidden ? "opacity-0 pointer-events-none" : "opacity-100"}`}
     >
       {links.map((link) => {
         return (

@@ -1,3 +1,5 @@
+import Title from "./Title";
+
 const comments = [
   {
     id: 1,
@@ -28,7 +30,7 @@ const comments = [
 function Comments() {
   return (
     <div>
-      <h3 className="font-semibold text-[66px] mb-10">Mijozlar fikri</h3>
+    <Title text={"Mijozlar fikri"}/>
       <ul className=" grid grid-cols-3 gap-[21px] rounded-3xl">
         {comments.map((item) => {
           const { id, description, img, fullName, job } = item;

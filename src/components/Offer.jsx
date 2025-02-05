@@ -1,6 +1,4 @@
-import { GoShieldCheck } from "react-icons/go";
-import { IoRocketOutline } from "react-icons/io5";
-import { CiWallet } from "react-icons/ci";
+import Title from "./Title";
 const cards = [
   {
     id: 1,
@@ -28,7 +26,7 @@ const cards = [
 function Offer() {
   return (
     <div>
-      <h3 className="font-semibold text-6xl mb-10">Nega aynan biz?</h3>
+      <Title text={"Nega aynan biz?"} />
       <ul className="flex gap-5">
         {cards.map((card) => {
           const { id, icon, title, description } = card;
