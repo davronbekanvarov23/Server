@@ -3,22 +3,22 @@ import Title from "./Title";
 const news = [
   {
     id: 1,
-    img: "",
+    img: "/homeImages/New.jpg",
     title: "Bizda katta chegirmalar shoshiling",
   },
   {
     id: 2,
-    img: "",
+    img: "/homeImages/New.jpg",
     title: "Jamoamiz nomidan barchani bayram bilan tabriklaymiz",
   },
   {
     id: 3,
-    img: "",
+    img: "/homeImages/New.jpg",
     title: "Eng ishonchli serverlar",
   },
   {
     id: 4,
-    img: "",
+    img: "/homeImages/New.jpg",
     title: "SMS xizmatlari bo‘yicha tariflar o‘zgardi",
   },
 ];
@@ -31,7 +31,7 @@ function News() {
         {news.map((item) => {
           const { id, img, title } = item;
           return (
-            <li key={id}>
+            <li key={id} className=" max-w-[305px]">
               <img
                 src={img}
                 alt=""
