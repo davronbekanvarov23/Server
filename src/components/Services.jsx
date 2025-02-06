@@ -35,7 +35,7 @@ function Services() {
               <h4 className="font-semibold text-[40px] font-[Inter]">
                 VPS/VDS
               </h4>
-              <p className="font-medium text-[20px] ">
+              <p className="font-medium text-[20px] leading-[25px] ">
                 Resurslarni to‘liq boshqarish imkonini beruvchi virtual
                 serverlar. Kuchli texnik infratuzilmamiz bilan qulaylik va
                 barqarorlikni ta’minlaymiz.
@@ -62,7 +62,7 @@ function Services() {
               <GoArrowUpRight size={34} />
             </span>
             <h4 className="font-semibold text-[40px]">Domen</h4>
-            <p className=" text-[20px] ">
+            <p className=" text-[20px] leading-[25px] ">
               Brendingiz uchun eng mos va esda qolarli domenni tanlashga yordam
               beramiz. Sizga kerakli domenni tez va qulay tarzda ro‘yxatdan
               o‘tkazing!
@@ -75,37 +75,39 @@ function Services() {
 
       <div className="flex gap-5 ">
         {/* First-card */}
-        <div className="pl-10 pt-[57px] pr-[30px] pb-10 lavender relative max-w-[413px] rounded-[40px] border-1 pastelBlue">
+        <div className="pl-10 pt-[57px] pr-[48px] pb-10 lavender relative max-w-[413px] rounded-[40px] border-1 pastelBlue">
           <span className=" w-[60px] h-[60px] bg-[#BCBCBC]/40 rounded-[50px]  flex justify-center items-center ml-auto absolute right-[30px] top-[30px]">
             <GoArrowUpRight size={34} />
           </span>
-          <h4 className="font-semibold text-[40px] font-[Inter] max-w-44 mainBlack">
+          <h4 className="font-semibold text-[40px] font-[Inter] max-w-44 leading-[48px] mainBlack">
             SSL sertifikati
           </h4>
-          <p className=" text-[20px] mt-2.5 ">
+          <p className=" text-[20px] mt-2.5 leading-[25px]">
             Saytingiz xavfsizligini oshiring va foydalanuvchilaringiz ishonchini
             qozoning.
           </p>
         </div>
         {/* Second-card */}
-        <div className="pl-10 pt-[78px] pr-[30px] pb-10 lavender relative max-w-[413px] rounded-[40px] border-1 pastelBlue">
+        <div className="pl-10 pt-[78px] pr-[52px] pb-10 lavender relative max-w-[413px] rounded-[40px] border-1 pastelBlue">
           <span className=" w-[60px] h-[60px] bg-[#BCBCBC]/40 rounded-[50px]  flex justify-center items-center ml-auto absolute right-[30px] top-[30px]">
             <GoArrowUpRight size={34} />
           </span>
-          <h4 className="font-semibold text-[40px] ">SMS</h4>
-          <p className=" text-[20px] mt-2.5 ">
+          <h4 className="font-semibold text-[40px] leading-[50px] ">SMS</h4>
+          <p className=" text-[20px] mt-2.5 text-[#292929] leading-[25px]">
             Mijozlaringizga tez va oson aloqa yo‘llarini taqdim eting. Bizning
             SMS xizmatlarimiz orqali xabarlaringizni istalgan vaqtda va joyda
             yetkazing.
           </p>
         </div>{" "}
         {/* third-card */}
-        <div className="pl-10 pt-[57px] pr-[30px] pb-10 bg-black text-white   relative max-w-[413px] rounded-[40px] border-1 pastelBlue">
+        <div className="pl-10 pt-[53px] pr-[45px] pb-10 bg-black text-white   relative max-w-[413px] rounded-[40px] border-1 pastelBlue">
           <span className=" w-[60px] h-[60px] bg-[#BCBCBC]/40 rounded-[50px]  flex justify-center items-center ml-auto absolute right-[30px] top-[30px]">
             <GoArrowUpRight size={34} />
           </span>
-          <h4 className="font-semibold text-[41px]">Qo‘llab quvvatlash</h4>
-          <p className=" text-[20px] font-medium mt-2.5 ">
+          <h4 className="font-semibold text-[40px] leading-[50px] ">
+            Qo‘llab quvvatlash
+          </h4>
+          <p className=" text-[20px] font-medium mt-2.5  leading-[25px]">
             24/7 texnik yordam! Biz sizning barcha muammolaringizni tez va
             sifatli hal qilishga tayyormiz.
           </p>
