@@ -32,8 +32,8 @@ const partners = [
 
 function Partner() {
   return (
-    <div className="relative h-[83px] overflow-hidden shadow-[inset_20px_0_20px_-10px_rgba(0,0,0,0.5),inset_-20px_0_20px_-10px_rgba(0,0,0,0.5)]">
-      <Marquee pauseOnHover speed={50}>
+    <div className=" h-[83px]  ">
+      <Marquee pauseOnHover speed={150}>
         {partners.map(({ id, img }) => (
           <div
             key={id}

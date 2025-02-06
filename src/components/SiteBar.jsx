@@ -46,7 +46,7 @@ function SiteBar() {
         isFixed
           ? "fixed bottom-2 left-1/2 transform -translate-x-1/2"
           : "relative"
-      } ${isHidden ? "opacity-0 pointer-events-none" : "opacity-80"}`}
+      } ${isHidden ? "opacity-0 pointer-events-none" : "opacity-100 "}`}
     >
       {links.map((link) => {
         return (
