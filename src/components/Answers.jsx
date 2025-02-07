@@ -30,35 +30,43 @@ const questions = [
 ];
 
 function Answers() {
-  const [openId, setOpenId] = useState(null); 
+  const [openId, setOpenId] = useState(null);
   const toggleItem = (id) => {
-    setOpenId(openId === id ? null : id); 
+    setOpenId(openId === id ? null : id);
   };
 
   return (
     <div>
-     <Title text={"Ko‘p so‘raladigan savollar"}/>
+      <Title text={"Ko‘p so‘raladigan savollar"} />
       <ul>
         <hr className="text-[#eaedf9] text-[3px]" />
         {questions.map((item) => (
           <li key={item.id} className="">
             <span
               className={`flex justify-between items-center ${
-                openId === item.id ? "pt-7 pb-4" : "py-10"
+                openId === item.id
+                  ? "lg:pt-7 lg:pb-4 pt-4 pb-2"
+                  : "py-3 lg:py-10"
               } pr-5 cursor-pointer`}
               onClick={() => toggleItem(item.id)}
             >
-              <p className="text-[28px]">{item.question}</p>
+              <p className="lg:text-[28px] text-[12px]">{item.question}</p>
               <IoIosArrowDown
                 size={34}
-                className={`transform transition-all ${
+                className={`hidden lg:flex transform transition-all ${
+                  openId === item.id ? "rotate-180" : ""
+                }`}
+              />{" "}
+              <IoIosArrowDown
+                size={10}
+                className={`lg:hidden transform transition-all ${
                   openId === item.id ? "rotate-180" : ""
                 }`}
               />
             </span>
 
             {openId === item.id && (
-              <p className="text-[#8B8B8D] text-2xl mb-[28px] pr-[108px]">
+              <p className="text-[#8B8B8D] lg:text-2xl lg:mb-[28px] lg:pr-[108px] text-[8px] pr-8">
                 {item.answer}
               </p>
             )}

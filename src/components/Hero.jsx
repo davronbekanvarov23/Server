@@ -5,7 +5,7 @@ import Button from "./Button";
 
 function Hero() {
   return (
-    <div className=" bg-black text-white flex pl-[90px] gap-[108px] rounded-4xl mb-[34px] h-[492px]   ">
+    <div className=" lg:bg-black text-white flex pl-[90px] gap-[108px] rounded-4xl mb-[34px] h-[492px]   ">
       <div className=" mt-[60px] max-w-[545px] ">
         <h2 className=" text-6xl  font-extrabold mb-2.5 leading-[76px] ">
           Eng Ishonchli Hosting Xizmati!
@@ -31,7 +31,7 @@ function Hero() {
         autoPlay
         loop
         muted
-        className="object-cover"
+        className="object-cover bg-cover  h-screen absolute -z-10 opacity-100 blur-[4px]"
         width={434}
         height={468}
         src="/videos/tubes.mp4"

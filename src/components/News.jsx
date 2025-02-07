@@ -3,12 +3,12 @@ import Title from "./Title";
 const news = [
   {
     id: 1,
-    img: "/homeImages/New.jpg",
+    img: "/homeImages/new1.png",
     title: "Bizda katta chegirmalar shoshiling",
   },
   {
     id: 2,
-    img: "/homeImages/New.jpg",
+    img: "/homeImages/new2.png",
     title: "Jamoamiz nomidan barchani bayram bilan tabriklaymiz",
   },
   {
@@ -27,7 +27,7 @@ function News() {
   return (
     <div>
       <Title text={"Yangiliklar"} />
-      <ul className="flex gap-5">
+      <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 ">
         {news.map((item) => {
           const { id, img, title } = item;
           return (
@@ -35,11 +35,10 @@ function News() {
               <img
                 src={img}
                 alt=""
-                width={305}
-                height={200}
-                className=" mb-5 lavender rounded-[30px]"
+                
+                className=" lg:w-[305px] lg:h-[200px] w-[180px] h-[110px] lg:mb-5 mb-1 lavender rounded-[30px]"
               />
-              <h6 className="text-[18px] font-medium leading-[23px]">
+              <h6 className="lg:text-[18px] font-medium lg:leading-[23px] text-[12px]  leading-3.5">
                 {title}
               </h6>
             </li>

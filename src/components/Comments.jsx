@@ -30,30 +30,37 @@ const comments = [
 function Comments() {
   return (
     <div>
-    <Title text={"Mijozlar fikri"}/>
-      <ul className=" grid grid-cols-3 gap-[21px] rounded-3xl">
+      <Title text={"Mijozlar fikri"} />
+      <ul className=" grid lg:grid-cols-3 md:grid-cols-2 gap-[21px] ">
         {comments.map((item) => {
           const { id, description, img, fullName, job } = item;
           return (
             <li
-              className=" py-[27px] pr-[38px]  pl-[30px] lavender max-w-[413px] border-1 pastelBlue rounded-[40px]"
+              className=" lg:py-[27px] lg:pr-[38px]  lg:pl-[30px] lavender max-w-[413px] border-1 pastelBlue lg:rounded-[40px] p-3 rounded-[20px]"
               key={id}
             >
               <img
                 src="/homeImages/qoshtirnoq.png"
                 alt="qoshtirnoq"
-                width={56}
-                height={60}
+                className="lg:w-14 lg:h-[60px] w-7 h-7 "
               />
-              <p className=" mt-[34px] mb-4 text-[18px] h-34 line-clamp-5">
+              <p className=" lg:mt-[34px]  lg:text-[18px] lg:h-[132px] lg:leading-[22.68px] lg:line-clamp-5 line-clamp-3 pt-4 mb-1 text-[12px]">
                 {description}
               </p>
               <hr className=" text-[#CFD3E6]" />
               <div className="flex gap-4 mt-4">
-                <img src={img} alt={fullName} width={63} height={63} />
+                <img
+                  src={img}
+                  alt={fullName}
+                  className="lg:w-[63px] lg:h-[63px] w-9 h-9"
+                />
                 <span>
-                  <h5 className=" font-semibold text-[20px]">{fullName}</h5>
-                  <p className=" text-[20px] text-gray-400">{job}</p>
+                  <h5 className=" font-semibold lg:text-[20px] text-[14px]">
+                    {fullName}
+                  </h5>
+                  <p className=" lg:text-[20px] text-gray-400 text-[14px]">
+                    {job}
+                  </p>
                 </span>
               </div>
             </li>

@@ -2,12 +2,12 @@ import FormInput from "./FormInput";
 
 function Questions() {
   return (
-    <div className="flex justify-between">
+    <div className="flex flex-col lg:flex-row gap-4 justify-between ">
       <div className=" max-w-[528px]">
-        <h3 className=" font-semibold text-[46px] mainBlack">
+        <h3 className=" font-semibold lg:text-[46px] text-2xl mainBlack">
           Qo‘shimcha savollaringiz bormi?
         </h3>
-        <p className="text-[20px]">
+        <p className="lg:text-[20px] text-[14px] mt-2">
           Savollaringizni qoldiring o‘zimiz aloqaga chiqamiz.
         </p>
       </div>
@@ -20,7 +20,7 @@ function Questions() {
           <FormInput placeholder={"Telefon raqam"} />
           <FormInput placeholder={"Savolingizni yozib qoldiring"} />
           <hr className="text-white" />
-          <button className="px-[30px] bg-black text-white rounded-3xl font-[Inter] font-semibold text-[20px] py-5 ml-auto cursor-pointer">
+          <button className="lg:px-[30px] lg:py-5 lg:rounded-[70px] lg:text-[20px] bg-black text-white  font-[Inter] font-semibold ml-auto cursor-pointer px-10 py-[12.5px] text-[16px] leading-[19px] rounded-[20px]">
             Jonatish
           </button>
         </form>

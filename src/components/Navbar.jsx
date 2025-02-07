@@ -1,48 +1,23 @@
 import NavLinks from "./NavLinks";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-
+import Translatebtn from "./Translatebtn";
 function Navbar() {
   return (
     <div className="py-8">
-      <div className="navbar align-content  p-0">
+      <div className="navbar align-content p-0 ">
         <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                {" "}
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
-              </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content  rounded-box z-1 mt-3 bg-black p-2 shadow"
-            >
-              <NavLinks />
-            </ul>
-          </div>
           <Link className="" to={"/"}>
             <img
               src="/images/Logo.svg"
               alt="logo"
               width="196"
               height="60"
-              // className="h-16"
+              className="h-7 w-[92px]"
             />
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal  bg-black rounded-[70px] p-[7px] gap-2.5">
             <span className="flex items-center rounded-[60px] px-5 py-[11px] bg-white max-w-[125px] w-full">
               <img
@@ -60,13 +35,38 @@ function Navbar() {
             <NavLinks />
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end ">
+          <Translatebtn className={"lg:flex mr-8 hidden"} />
           <Button
             text={"Kirish "}
             className={
-              "raspberryRed text-white py-5 px-10 font-semibold   text-[16px]  "
+              "raspberryRed text-white lg:py-5 lg:px-10 lg:font-semibold lg:text-[16px] py-[7.5px] px-[13.5px] font-medium text-[12px] leading-[14.52px] "
             }
           />
+          <img src="/images/search-icon.svg" alt="qidirish" width={16} height={16} className="mx-2 lg:hidden" />
+          <Translatebtn className={"lg:hidden"} />
+          <div className="dropdown relative">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z"
+                  fill="#282728"
+                />
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content absolute left-[-100px] rounded-box z-10 mt-3 bg-black p-2 shadow"
+            >
+              <NavLinks />
+            </ul>
+          </div>
         </div>
       </div>
     </div>

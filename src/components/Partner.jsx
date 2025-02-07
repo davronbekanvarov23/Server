@@ -32,14 +32,14 @@ const partners = [
 
 function Partner() {
   return (
-    <div className=" h-[83px]  ">
+    <div className=" lg:h-[83px] h-11  ">
       <Marquee pauseOnHover speed={150}>
         {partners.map(({ id, img }) => (
           <div
             key={id}
-            className="mx-10 flex-shrink-0 flex justify-center items-center h-[83px]"
+            className="mx-10 flex-shrink-0 flex justify-center items-center lg:h-[83px] h-11"
           >
-            <img src={img} alt="" />
+            <img src={img} alt="" height={44} />
           </div>
         ))}
       </Marquee>
