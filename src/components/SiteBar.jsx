@@ -42,9 +42,9 @@ function SiteBar() {
 
   return (
     <ul
-      className={`max-w-[524px] mx-auto font-medium font-[Inter] lavender flex gap-2.5 rounded-[70px] p-1 border-1 border-[#C7C6D2] z-50   ${
+      className={`max-w-[524px] mx-auto font-medium font-[Inter] lavender lg:flex gap-2.5 rounded-[70px] p-1 border-1 border-[#C7C6D2] z-50 hidden  ${
         isFixed
-          ? "fixed bottom-2 left-1/2 transform -translate-x-1/2"
+          ? "lg:fixed bottom-2 left-1/2 transform -translate-x-1/2"
           : "relative"
       } ${isHidden ? "opacity-0 pointer-events-none" : "opacity-100 "}`}
     >

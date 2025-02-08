@@ -97,7 +97,7 @@ function Footer() {
                 const { id, link, img, title } = social;
                 return (
                   <Link to={link} key={id}>
-                    <img src={img} alt={title} className="lg:-9 lg:h-9 w-6 h-6"/>
+                    <img src={img} alt={title} className="lg:w-9 lg:h-9 w-6 h-6"/>
                   </Link>
                 );
               })}
