@@ -27,7 +27,7 @@ function News() {
   return (
     <div>
       <Title text={"Yangiliklar"} />
-      <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 ">
+      <ul className="grid grid-cols-2  lg:grid-cols-4 gap-5 ">
         {news.map((item) => {
           const { id, img, title } = item;
           return (

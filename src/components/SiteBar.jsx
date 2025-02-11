@@ -42,7 +42,7 @@ function SiteBar() {
 
   return (
     <ul
-      className={`max-w-[524px] mx-auto font-medium font-[Inter] lavender lg:flex gap-2.5 rounded-[70px] p-1 border-1 border-[#C7C6D2] z-50 hidden  ${
+      className={`max-w-[524px] mx-auto font-medium font-[Inter] lavender lg:flex gap-2.5 rounded-[70px] p-1 border-1 border-[#C7C6D2] z-50 hidden bottom-8 backdrop-blur-[8px] ${
         isFixed
           ? "lg:fixed bottom-2 left-1/2 transform -translate-x-1/2"
           : "relative"

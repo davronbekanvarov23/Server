@@ -7,7 +7,7 @@ function MainLayout() {
     <>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow align-content">
+        <main className="flex-grow ">
           <Outlet />
         </main>
         <Footer />

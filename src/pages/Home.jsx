@@ -12,7 +12,7 @@ import {
 
 function Home() {
   return (
-    <div className="flex lg:gap-[120px] gap-9 flex-col">
+    <div className="align-content flex lg:gap-[120px] gap-9 flex-col">
       <Hero />
       <SiteBar />
       <Offer />

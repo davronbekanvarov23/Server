@@ -21,7 +21,7 @@ function Questions() {
           <FormInput placeholder={"Savolingizni yozib qoldiring"} />
           <hr className="text-white" />
           <button className="lg:px-[30px] lg:py-5 lg:rounded-[70px] lg:text-[20px] bg-black text-white  font-[Inter] font-semibold ml-auto cursor-pointer px-10 py-[12.5px] text-[16px] leading-[19px] rounded-[20px]">
-            Jonatish
+            Jo‘natish
           </button>
         </form>
       </div>

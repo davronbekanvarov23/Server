@@ -13,13 +13,13 @@ function Navbar() {
               alt="logo"
               width="196"
               height="60"
-              className="h-7 w-[92px]"
+              className="h-7 w-[92px] lg:w-[196px] lg:h-[60px]"
             />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex ">
-          <ul className="menu menu-horizontal  bg-black rounded-[70px] p-[7px] gap-2.5">
-            <span className="flex items-center rounded-[60px] px-5 py-[11px] bg-white max-w-[125px] w-full">
+          <ul className="menu menu-horizontal  bg-black rounded-[70px] p-[7px] gap-2.5 w-[660px] ">
+            <span className="flex items-center rounded-[60px] px-5 py-[11px] bg-white max-w-[386px] w-full">
               <img
                 src="/images/search-icon.svg"
                 alt=""
@@ -43,7 +43,13 @@ function Navbar() {
               "raspberryRed text-white lg:py-5 lg:px-10 lg:font-semibold lg:text-[16px] py-[7.5px] px-[13.5px] font-medium text-[12px] leading-[14.52px] "
             }
           />
-          <img src="/images/search-icon.svg" alt="qidirish" width={16} height={16} className="mx-2 lg:hidden" />
+          <img
+            src="/images/search-icon.svg"
+            alt="qidirish"
+            width={16}
+            height={16}
+            className="mx-2 lg:hidden"
+          />
           <Translatebtn className={"lg:hidden"} />
           <div className="dropdown relative">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
