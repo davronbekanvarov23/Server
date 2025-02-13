@@ -3,11 +3,14 @@ import { Link, NavLink } from "react-router-dom";
 import Button from "./Button";
 import Translatebtn from "./Translatebtn";
 import { barLinks } from "./BarLinks";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { RxCross2 } from "react-icons/rx";
+
 function Navbar() {
-  const [inputValue, setInputValue] = useState("");
   const [isEditing, setIsEditing] = useState(false);
-  useEffect(() => {});
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+  
   return (
     <div className="lg:py-8 py-1 lg:relative sticky  top-0 left-0 w-full bg-white z-50 shadow-md md:shadow-[0]">
       <div className="navbar align-content p-0 ">
@@ -22,9 +25,17 @@ function Navbar() {
             />
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex ">
-          <ul className="menu menu-horizontal  bg-black rounded-[70px] p-[7px] gap-2.5 w-[660px] ">
-            <span className="inline-flex items-center rounded-[60px] px-5 py-[11px] bg-white border border-gray-300">
+        <div className="navbar-center hidden lg:flex max-w-[660px] w-full justify-center ">
+          <ul
+            className={`menu menu-horizontal bg-black rounded-[70px] p-[7px] gap-2.5 ${
+              isExpanded ? " w-full" : "w-[400px]"
+            } `}
+          >
+            <span
+              className={`flex items-center rounded-[60px] px-5 py-[11px] bg-white border border-gray-300  
+      ${isExpanded ? " w-full max-w-[370px] z-50 shadow-lg" : "max-w-[125px]"}`}
+              onClick={() => setIsExpanded(true)}
+            >
               <img
                 src="/images/search-icon.svg"
                 alt=""
@@ -33,11 +44,19 @@ function Navbar() {
               />
               <input
                 type="text"
-                placeholder="izlash"
                 value={inputValue}
+                placeholder="izlash"
+                onFocus={() => setIsExpanded(true)}
+                onBlur={() => {
+                  setIsExpanded(false);
+                  setInputValue("");
+                }}
                 onChange={(e) => setInputValue(e.target.value)}
-                size={Math.max(inputValue.length, 5)}
-                className="border-0 outline-none ml-[15px] placeholder:text-[#020F15] placeholder:font-[Inter] placeholder:font-semibold text-[16px] w-auto"
+                className="border-0 outline-none ml-[15px] w-full placeholder:text-[#020F15] placeholder:font-[Inter] placeholder:font-semibold text-[16px]"
+              />
+              <RxCross2
+                onClick={() => setIsExpanded(false)}
+                className={`${isExpanded ? "flex" : "hidden"} cursor-pointer `}
               />
             </span>
             <NavLinks />
@@ -48,20 +67,30 @@ function Navbar() {
           <Button
             text={"Kirish "}
             className={
-              "raspberryRed text-white lg:py-5 lg:px-10 lg:font-semibold lg:text-[16px] py-[7.5px] px-[13.5px] font-medium text-[12px] leading-[14.52px] "
+              "raspberryRed text-white lg:py-5 lg:px-10 lg:font-semibold lg:text-[16px] py-[7.5px] px-[13.5px] font-medium text-[12px] leading-[14.52px] mr-2"
             }
           />
 
-          <span>
+          <span className="relative h-6 items-center flex ">
             {" "}
             {isEditing ? (
-              <input
-                type="text"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                className=" ml-[15px] placeholder:text-[#020F15] placeholder:font-[Inter] placeholder:font-semibold text-[16px] w-[80px] "
-              />
-              
+              <span className="absolute -top-1 -left-63 flex items-center border border-gray-300 bg-white p-1  z-50 rounded-[40px]  ">
+                {" "}
+                <input
+                  type="text"
+                  value={innputValue}
+                  onBlur={() => {
+                    setIsEditing(false);
+                    setInputValue("");
+                  }}
+                  onChange={(e) => setInputValue(e.target.value)}
+                  className="  ml-[5px] border-0 outline-none placeholder:text-[#020F15] placeholder:font-[Inter] placeholder:font-semibold text-[16px] mx-w-[400px] "
+                />
+                <RxCross2
+                  onClick={() => setIsEditing(false)}
+                  className="  cursor-pointer"
+                />
+              </span>
             ) : (
               <img
                 onClick={() => setIsEditing(true)}
@@ -69,7 +98,7 @@ function Navbar() {
                 alt="qidirish"
                 width={16}
                 height={16}
-                className="mx-2 lg:hidden"
+                className=" lg:hidden mr-2 cursor-pointer"
               />
             )}
           </span>
