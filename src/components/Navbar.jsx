@@ -3,7 +3,11 @@ import { Link, NavLink } from "react-router-dom";
 import Button from "./Button";
 import Translatebtn from "./Translatebtn";
 import { barLinks } from "./BarLinks";
+import { useEffect, useState } from "react";
 function Navbar() {
+  const [inputValue, setInputValue] = useState("");
+  const [isEditing, setIsEditing] = useState(false);
+  useEffect(() => {});
   return (
     <div className="lg:py-8 py-1 lg:relative sticky  top-0 left-0 w-full bg-white z-50 shadow-md md:shadow-[0]">
       <div className="navbar align-content p-0 ">
@@ -20,7 +24,7 @@ function Navbar() {
         </div>
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal  bg-black rounded-[70px] p-[7px] gap-2.5 w-[660px] ">
-            <span className="flex items-center rounded-[60px] px-5 py-[11px] bg-white max-w-[386px] w-full">
+            <span className="inline-flex items-center rounded-[60px] px-5 py-[11px] bg-white border border-gray-300">
               <img
                 src="/images/search-icon.svg"
                 alt=""
@@ -30,7 +34,10 @@ function Navbar() {
               <input
                 type="text"
                 placeholder="izlash"
-                className="border-0 outline-none ml-[15px] w-full  placeholder:text-[#020F15] placeholder:font-[Inter] placeholder:font-semibold text-[16px] "
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                size={Math.max(inputValue.length, 5)}
+                className="border-0 outline-none ml-[15px] placeholder:text-[#020F15] placeholder:font-[Inter] placeholder:font-semibold text-[16px] w-auto"
               />
             </span>
             <NavLinks />
@@ -44,13 +51,28 @@ function Navbar() {
               "raspberryRed text-white lg:py-5 lg:px-10 lg:font-semibold lg:text-[16px] py-[7.5px] px-[13.5px] font-medium text-[12px] leading-[14.52px] "
             }
           />
-          <img
-            src="/images/search-icon.svg"
-            alt="qidirish"
-            width={16}
-            height={16}
-            className="mx-2 lg:hidden"
-          />
+
+          <span>
+            {" "}
+            {isEditing ? (
+              <input
+                type="text"
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                className=" ml-[15px] placeholder:text-[#020F15] placeholder:font-[Inter] placeholder:font-semibold text-[16px] w-[80px] "
+              />
+              
+            ) : (
+              <img
+                onClick={() => setIsEditing(true)}
+                src="/images/search-icon.svg"
+                alt="qidirish"
+                width={16}
+                height={16}
+                className="mx-2 lg:hidden"
+              />
+            )}
+          </span>
           <Translatebtn className={"lg:hidden"} />
           <div className="dropdown relative">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
