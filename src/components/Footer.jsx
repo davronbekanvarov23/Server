@@ -63,7 +63,7 @@ const socials = [
 
 function Footer() {
   return (
-    <div className=" mt-[120px] bg-black Footerref">
+    <div className=" mt-[120px] bg-black ">
       <div className="align-content">
         <footer className="footer sm:footer-horizontal  text-base-100  lg:p-10 py-6">
           <nav className=" max-w-[490px]">
@@ -72,7 +72,7 @@ function Footer() {
               alt="footer logo"
               className="lg:w-[163px] lg:h-[49px] w-[120px] h-9"
             />
-            <p className=" font-semibold lg:text-3xl mt-12 mb-5 text-[20px] leading-[25px]">
+            <p className=" font-semibold lg:text-3xl lg:mt-12 lg:mb-5 text-[20px] leading-[25px] my-6">
               200K mijozlar bizga ishonishgan. Siz ham bizga qo‘shiling!
             </p>
             <Button
@@ -82,26 +82,58 @@ function Footer() {
               }
             />
           </nav>
-          <nav className=" gap-4">
-            {links.map((item) => {
-              return (
-                <Link className="link link-hover lg:text-2xl text-[20px]" key={item.id}>
-                  {item.title}
-                </Link>
-              );
-            })}
-          </nav>
-          <nav className=" lg:mt-auto ml-auto ">
-            <div className="grid grid-flow-col gap-[22px]">
+          <div className="flex gap-12">
+            <nav className="flex flex-col gap-4">
+              {links.map((item) => {
+                return (
+                  <Link
+                    className="link link-hover lg:text-2xl text-[20px]"
+                    key={item.id}
+                  >
+                    {item.title}
+                  </Link>
+                );
+              })}
+            </nav>
+            <span className="flex flex-col ml-auto gap-4 md:hidden">
+              <Link className="link link-hover lg:text-2xl text-[20px]">
+                Foydalanuvchi shartlar
+              </Link>{" "}
+              <Link className="link link-hover lg:text-2xl text-[20px]">
+                Kompaniya haqida
+              </Link>{" "}
+              <Link className="link link-hover lg:text-2xl text-[20px]">
+                Maxfiylik siyosati
+              </Link>
+            </span>
+          </div>
+
+          <nav className="h-full">
+            <span className="md:flex flex-col ml-auto gap-4 hidden">
+              <Link className="link link-hover lg:text-2xl text-[20px]">
+                Foydalanuvchi shartlar
+              </Link>{" "}
+              <Link className="link link-hover lg:text-2xl text-[20px]">
+                Kompaniya haqida
+              </Link>{" "}
+              <Link className="link link-hover lg:text-2xl text-[20px]">
+                Maxfiylik siyosati
+              </Link>
+            </span>
+            <span className="grid grid-flow-col gap-[22px] mt-auto  ">
               {socials.map((social) => {
                 const { id, link, img, title } = social;
                 return (
                   <Link to={link} key={id}>
-                    <img src={img} alt={title} className="lg:w-9 lg:h-9 w-6 h-6"/>
+                    <img
+                      src={img}
+                      alt={title}
+                      className="lg:w-9 lg:h-9 w-6 h-6"
+                    />
                   </Link>
                 );
               })}
-            </div>
+            </span>
           </nav>
         </footer>
       </div>

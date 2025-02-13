@@ -4,7 +4,7 @@ import Button from "./Button";
 import Translatebtn from "./Translatebtn";
 function Navbar() {
   return (
-    <div className="lg:py-8 py-1 lg:relative sticky  top-0 left-0 w-full bg-white z-50 shadow-md">
+    <div className="lg:py-8 py-1 lg:relative sticky  top-0 left-0 w-full bg-white z-50 shadow-md md:shadow-[0]">
       <div className="navbar align-content p-0 ">
         <div className="navbar-start">
           <Link className="" to={"/"}>
