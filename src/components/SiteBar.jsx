@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Button from "./Button";
 import { useEffect } from "react";
+import { barLinks } from "./BarLinks";
+
 
 function SiteBar() {
   const [isFixed, setIsFixed] = useState(false);
@@ -21,24 +23,7 @@ function SiteBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = [
-    {
-      id: 1,
-      text: "Domen",
-    },
-    {
-      id: 2,
-      text: "Hosting",
-    },
-    {
-      id: 3,
-      text: "Server",
-    },
-    {
-      id: 4,
-      text: "VPS/VDS",
-    },
-  ];
+   
 
   return (
     <ul
@@ -48,7 +33,7 @@ function SiteBar() {
           : "relative"
       } ${isHidden ? "opacity-0 pointer-events-none" : "opacity-100 "}`}
     >
-      {links.map((link) => {
+      {barLinks.map((link) => {
         return (
           <li
             key={link.id}

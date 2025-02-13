@@ -14,7 +14,7 @@ function Home() {
   return (
     <div className="align-content flex lg:gap-[120px] gap-9 flex-col">
       <Hero />
-      <SiteBar />
+      <SiteBar/>
       <Offer />
       <Services />
       <News />

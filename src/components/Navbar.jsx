@@ -1,7 +1,8 @@
 import NavLinks from "./NavLinks";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Button from "./Button";
 import Translatebtn from "./Translatebtn";
+import { barLinks } from "./BarLinks";
 function Navbar() {
   return (
     <div className="lg:py-8 py-1 lg:relative sticky  top-0 left-0 w-full bg-white z-50 shadow-md md:shadow-[0]">
@@ -68,9 +69,24 @@ function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content absolute left-[-100px] rounded-box z-10 mt-3 bg-black p-2 shadow"
+              className="menu menu-sm dropdown-content absolute left-[-100px] rounded-box z-10 mt-3 bg-black p-2 shadow "
             >
               <NavLinks />
+              {barLinks.map((item) => {
+                return (
+                  <NavLink
+                    key={item.id}
+                    to={item.path}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "raspberryRed text-white px-[15px] py-[11px] font-[Inter] font-semibold text-[16px] rounded-[40px]"
+                        : "text-gray-100 px-[15px] py-[11px] font-[Inter] font-semibold text-[16px]"
+                    }
+                  >
+                    {item.text}
+                  </NavLink>
+                );
+              })}
             </ul>
           </div>
         </div>
