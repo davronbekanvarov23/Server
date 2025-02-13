@@ -6,7 +6,7 @@ import Button from "./Button";
 function Hero() {
   return (
     <div className=" md:bg-black text-white flex  rounded-[40px] mb-[34px] relative  ">
-      <div className="lg:mt-[60px] max-w-[545px]  lg:pl-[89px]  pt-[73px] pb-[90px] lg:pb-[69px] text-center lg:text-start">
+      <div className="lg:mt-[60px] lg:max-w-[545px]  lg:pl-[80px]  pt-[73px] pb-[90px] lg:pb-[69px] text-center md:text-start md:pl-4 md:max-w-[350px]">
         <h2 className=" lg:text-6xl  lg:font-extrabold lg:mb-2.5 lg:leading-[76px] text-3xl leading-[38px] font-semibold lg:w-[545px] mb-6">
           Eng Ishonchli Hosting Xizmati!
         </h2>
@@ -31,7 +31,7 @@ function Hero() {
         autoPlay
         loop
         muted
-        className="h-full bg-cover absolute lg:z-10 -z-10 opacity-100 blur-[4px] lg:blur-none lg:w-[434px]  object-cover md:right-[10px] md:rounded-[40px] lg:right-[50px] "
+        className="h-full bg-cover absolute md:z-10 -z-10 opacity-100 blur-[4px] md:blur-none lg:w-[434px]  object-cover md:-right-[0px] md:w-96 md:rounded-[40px] lg:right-[50px] "
         src="/videos/tubes.mp4"
       ></video>
     </div>
