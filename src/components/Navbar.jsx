@@ -10,7 +10,6 @@ function Navbar() {
   const [isEditing, setIsEditing] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  
   return (
     <div className="lg:py-8 py-1 lg:relative sticky  top-0 left-0 w-full bg-white z-50 shadow-md md:shadow-[0]">
       <div className="navbar align-content p-0 ">
@@ -78,7 +77,7 @@ function Navbar() {
                 {" "}
                 <input
                   type="text"
-                  value={innputValue}
+                  value={inputValue}
                   onBlur={() => {
                     setIsEditing(false);
                     setInputValue("");
@@ -98,7 +97,7 @@ function Navbar() {
                 alt="qidirish"
                 width={16}
                 height={16}
-                className=" lg:hidden mr-2 cursor-pointer"
+                className=" lg:hidden cursor-pointer max-w-none"
               />
             )}
           </span>
